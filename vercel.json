@@ -1,14 +1,14 @@
 {
   "functions": {
     "api/cron.js": {
-      "runtime": "nodejs"
+      "runtime": "nodejs",
+      "schedule": "* * * * *"
     }
   },
   "routes": [
     {
       "src": "/api/cron",
-      "dest": "api/cron.js",
-      "schedule": "* * * * *"
+      "dest": "api/cron.js"
     }
   ]
 }
