@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "api/cron.js": {
+      "runtime": "nodejs"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/cron",
+      "dest": "api/cron.js"
+    }
+  ],
+  "schedule": [
+    {
+      "cron": "* * * * *",
+      "src": "/api/cron"
+    }
+  ]
+}
+
